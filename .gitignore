@@ -2,3 +2,4 @@ protected/data/cache/
 *.mp3
 *.dat
 *.bat
+protected/helpers/*
