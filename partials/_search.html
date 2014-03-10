@@ -1,0 +1,69 @@
+<div id="wrapper">
+	<div id="search-left">
+		<div class="querybox inner-content">
+			<form novalidate ng-submit="search()" name="searchform" class="search-bar">
+				<input type="text" ng-model="query" required />
+				<input type="submit" class="browse" ng-disabled="!searchform.$valid" ng-class="{disabled: !searchform.$valid}" value="" />
+			</form>
+		</div>
+		<div class="inner-content" style="padding-top: 0px;">
+			<div class="bubblebox" ng-show="!loading && songs.length > 0" style="border-left-color: #00ae14;">
+				Showing {{songs.length}} results for '{{lastSearch}}'
+			</div>
+			<div class="bubblebox" ng-show="!loading && songs.length == 0" style="border-left-color: #e0042d;">
+				No results found for '{{lastSearch}}'
+			</div>
+			<div class="bubblebox" ng-show="loading" ap-ellipsis speed="300" style="border-left-color: #01b4ff;">
+				Searching
+			</div>
+			
+			<div id="player" ap-player></div>
+		</div>
+	</div>
+	<div id="search-right">
+		<!-- Middling content (loader/no results view) -->
+		<div class="valign-o" ng-show="loading || (!loading && songs.length == 0)">
+			<div class="valign-m">
+				<div class="valign-i">
+					<i class="big-loader" ng-show="loading"></i>
+					<div ng-show="!loading && songs.length == 0">
+						<h1 style="color: red; font-size:45px;">Bummer, friend</h1>
+						<h2 style="color: red;">Looks like we couldn't find anything for '{{lastSearch}}'</h2>
+					</div>
+					<img src="images/sadface.png" ng-show="!loading && songs.length == 0" />					
+				</div>
+			</div>
+		</div>
+		<!-- Result set -->
+		<table class="pretty_table" ng-show="!loading && songs.length">
+			<colgroup>
+				<col style="width: 42px;" />
+				<col style="width: 40%;" />
+				<col style="width: 26%;" />
+				<col style="width: auto;" />
+				<col style="width: 80px;" />
+				<col style="width: 30px;" />
+			</colgroup>
+			<thead>
+				<tr class="song-info">
+					<th>&nbsp;</th>
+					<th style="padding: 0 15px 0 10px">TITLE</th>
+					<th>ARTIST</th>
+					<th>ALBUM</th>
+					<th class="txt-r">TIME</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="song in songs" class="song-info" ap-song-info song="song" number="$index+1" ng-class-odd="'alt-row'"></tr>
+			</tbody>
+		</table>
+		<div class="fullwidth loadmore" ng-show="!loading && hasMore">
+			<div class="centered" style="width: 300px;">
+				<a href ng-click="append()" ng-show="!appending" class="appender">load more...</a>
+				<i class="mini-loader" ng-show="appending">&nbsp;</a>
+			</div>
+		</div>
+	</div>
+	<div class="clearing"></div>
+</div>

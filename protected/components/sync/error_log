@@ -1,0 +1,22 @@
+[09-Mar-2014 21:01:17 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:01:17 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:01:18 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:01:18 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:04:20 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:04:20 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:05:28 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:05:28 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:05:41 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:05:41 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 15
+[09-Mar-2014 21:06:25 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 16
+[09-Mar-2014 21:06:25 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 16
+[09-Mar-2014 21:06:39 America/Denver] PHP Warning:  require_once(/protected/sync/git.php): failed to open stream: No such file or directory in /home4/codecra2/public_html/sync.php on line 16
+[09-Mar-2014 21:06:39 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/protected/sync/git.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home4/codecra2/public_html/sync.php on line 16
+[09-Mar-2014 21:08:22 America/Denver] PHP Fatal error:  Call to undefined function display_errors() in /home4/codecra2/public_html/sync.php on line 11
+[09-Mar-2014 21:09:18 America/Denver] PHP Fatal error:  Call to undefined function display_errors() in /home4/codecra2/public_html/sync.php on line 11
+[09-Mar-2014 21:09:22 America/Denver] PHP Fatal error:  Call to undefined function display_errors() in /home4/codecra2/public_html/sync.php on line 11
+[09-Mar-2014 21:10:05 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home4/codecra2/public_html/protected/sync/git.php on line 86
+[09-Mar-2014 21:10:29 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home4/codecra2/public_html/protected/sync/git.php on line 86
+[09-Mar-2014 21:10:31 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home4/codecra2/public_html/protected/sync/git.php on line 86
+[09-Mar-2014 21:10:46 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home4/codecra2/public_html/protected/sync/git.php on line 86
+[09-Mar-2014 21:11:11 America/Denver] PHP Warning:  mkdir(): No such file or directory in /home4/codecra2/public_html/protected/sync/git.php on line 86

@@ -1,0 +1,7 @@
+<div id="intro" class="centered">
+	<span class="intro-text">welcome to audioport</span>
+	<form name="queryform" novalidate ng-submit="runQuery()" class="search-bar">
+		<input type="text" ng-model="query" required placeholder="Start searching for music now!" />
+		<input type="button" class="browse" ng-click="runQuery()" ng-disabled="!queryform.$valid" value />
+	</form>
+</div>

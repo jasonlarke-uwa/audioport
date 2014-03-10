@@ -1,0 +1,19 @@
+<td class="txt-r">
+	<span ng-show="!song.isPlaying && !song.isPaused">{{number}}</span>
+	<div style="position:relative;" class="fullwidth">
+		<i class="player-ctrl" ng-class="{playing:song.isPlaying,mute:song.isPaused}" ng-show="song.isPlaying || song.isPaused" ng-click="toggleTrack()">&nbsp;</i>
+	</div>
+</td>
+<td title="{{song.title}}" class="song-title" class="ellipsis">
+	<div class="song-title" class="fullwidth">
+		<span>{{song.title}}</span>
+		<button class="nobutton player-ctrl" ng-show="hovering" ng-class="{play:!song.isPlaying, pause:song.isPlaying}" ng-click="toggleTrack()">&nbsp;</button>
+	</div>
+</td>
+<td title="{{song.artist}}" class="ellipsis">{{song.artist}}</td>
+<td title="{{song.album}}" class="ellipsis">
+	<span>{{song.album}}</span>
+	<i ng-show="!song.cached && Song.enableLookup" class="mini-loader">&nbsp;</i>
+</td>
+<td class="txt-r" title="{{song.length}}"><span>{{song.length}}</span></td>
+<td><a class="download-btn nobutton" ng-href="{{song.getDownloadUrl()}}" target="_blank">&nbsp;</a></td>

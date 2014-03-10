@@ -1,0 +1,7 @@
+<div class="info-container" ng-class="{playing:song.isPlaying || song.isPaused}">
+	<a href class="nobutton player-ctrl" ng-class="{playing:song.isPlaying,mute:song.isPaused}" ng-show="song.isPlaying || song.isPaused" ng-click="toggleTrack()">&nbsp;</a>
+	<p class="title" title="{{song.title}}">{{song.title}}</p>
+	<p class="artist" title="{{song.artist}}">{{song.artist}}</p>
+	<a href ng-href="{{song.getDownloadUrl()}}" class="nobutton player-ctrl down" target="_blank">&nbsp;</a>
+	<button class="nobutton player-ctrl" ng-click="toggleTrack()" ng-class="{play:!song.isPlaying,pause:song.isPlaying}">&nbsp;</button>
+</div>

@@ -1,0 +1,47 @@
+/* global overrides */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea, button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* floating content */
+.left { float: left; }
+.right { float: right; }
+
+.fullwidth { width: 100%; }
+.fullheight { height: 100%; }
+
+.txt-r { text-align: right; }
+.txt-l { text-align: left; }
+.txt-c { text-align: center; }
+
+.clearing { clear: both; }
+.fixed { position: fixed !important; }
+.inline { display: inline !important; }
+.block { display: block !important; }
+.inblock { display: inline-block !important; vertical-align: top; }
+.centered { margin: 0 auto; text-align: center; }
+
+/* headings */
+h1 { padding: 10px 0; font-size: 20px; font-weight: bold; }
+h2 { padding: 8px 0; font-size: 18px; font-weight: bold; }
+h3 { padding: 6px 0; font-size: 16px; font-weight: bold; }
+h4 { padding: 5px 0; font-size: 14px; font-weight: bold; }
+h5 { padding: 4px 0; }
+h6 { padding: 3px 0; }

@@ -1,0 +1,21 @@
+<script type="text/javascript">Song.enableLookup=false;</script>
+
+<div id="search">
+	<form novalidate ng-submit="search()" name="searchform" class="search-bar">
+		<input type="text" ng-model="query" required />
+		<input type="submit" class="browse" ng-disabled="!searchform.$valid" ng-class="{disabled: !searchform.$valid}" value="" />
+	</form>
+</div>
+<div id="page">
+	<div class="big-loader centered" style="padding-top: 50px; display: block;" ng-show="loading"></div>
+	<div class="results" ng-show="!loading">
+		{{songs.length > 0 ? songs.length : 'Bummer, no'}} results for '{{lastSearch}}'
+	</div>
+	<div ng-repeat="song in songs" class="song-info" ap-song-info song="song" ng-class-odd="'alt-row'"></div>
+	<div class="fullwidth loadmore" ng-show="!loading && hasMore">
+		<div class="centered" style="width: 300px;">
+			<a href ng-click="append()" ng-show="!appending" class="appender">load more...</a>
+			<i class="mini-loader" ng-show="appending">&nbsp;</a>
+		</div>
+	</div>
+</div>
