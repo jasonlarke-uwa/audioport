@@ -1,5 +1,5 @@
 protected/data/cache/
+protected/helpers/*.php
 *.mp3
 *.dat
 *.bat
-protected/helpers/*
